@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-brain"></i> Memory Game</h1>
+        <p class="subtitle">Flip the cards to find matching pairs. Test your memory!</p>
+    </header>
+    
+    <div class="game-info">
+        <div class="info-item">
+            <div class="info-label">Moves</div>
+            <div class="info-value" id="moves">0</div>
+        </div>
+        <div class="info-item">
+            <div class="info-label">Time</div>
+            <div class="info-value" id="timer">0s</div>
+        </div>
+        <div class="info-item">
+            <div class="info-label">Matches</div>
+            <div class="info-value" id="matches">0</div>
+        </div>
+        <div class="info-item">
+            <div class="info-label">Score</div>
+            <div class="info-value" id="score">0</div>
+        </div>
+    </div>
+    
+    <div class="difficulty-selector">
+        <span>Difficulty:</span>
+        <button class="diff-btn active" data-level="easy">Easy (4x3)</button>
+        <button class="diff-btn" data-level="medium">Medium (4x4)</button>
+        <button class="diff-btn" data-level="hard">Hard (6x4)</button>
+    </div>
+    
+    <div class="game-status" id="game-status">Find matching pairs!</div>
+    
+    <div class="controls">
+        <button id="start-btn"><i class="fas fa-play"></i> Start Game</button>
+        <button id="reset-btn"><i class="fas fa-redo"></i> Reset Game</button>
+        <button id="hint-btn"><i class="fas fa-lightbulb"></i> Hint</button>
+    </div>
+    
+    <div id="game-board"></div>
+    
+    <footer>
+        <p>Memory Game &copy; 2023 | Flip cards to match pairs | Made with <i class="fas fa-heart" style="color:#ff6b6b"></i></p>
+    </footer>
+ <script src="script.js"></script>
+
+</body>
+</html>
